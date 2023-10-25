@@ -36,4 +36,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/<NAME-OF-DOCKERHUB-REPOSITORY>:<DOCKER-TAG>
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/dat3-week9-wednesday:1.0.0
