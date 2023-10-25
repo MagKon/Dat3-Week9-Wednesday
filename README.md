@@ -1,20 +1,8 @@
-## Deployment CI/CD pipeline
+# Deployment CI/CD pipeline
 
-### Part 1 - GitHub workflow pipeline
 
-```
-    git checkout github
-```
+## Run the application locally with docker run
+`docker run --name data -p 7070:7070 -e CONNECTION_STR -e DB_USERNAME -e DB_PASSWORD -e DEPLOYED --network <DB_NETWORK> <YOUR-DOCKERHUB-NAME/<NAME-OF-DOCKERHUB-REPOSITORY>:<DOCKER-TAG>`
 
-### Part 2 - Docker Deployment pipeline
-
-```
-    git checkout docker
-```
-
-### Part 3 - Droplet Deployment
-
-```
-    git checkout docker-compose
-```
-
+## Run the application locally with docker-compose
+`docker compose up` 
